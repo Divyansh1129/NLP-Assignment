@@ -15,3 +15,13 @@ genre_response=requests.get(genre_url,params=genre_params)
 
 
 print(genre_response.status_code)
+
+genre_data=genre_response.json()
+
+genres={}
+
+for genre in genre_data['genres']:
+    genres[genre['id']]=genre['name']
+
+print(genres)
+
