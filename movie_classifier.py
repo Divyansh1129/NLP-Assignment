@@ -25,3 +25,4 @@ for genre in genre_data['genres']:
 
 print(genres)
 
+print("Fetching top rated movies...")
